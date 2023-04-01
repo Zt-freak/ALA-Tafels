@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Laurens Trotsenburg, Bryan Kho">
+    </head>
+    <body onload="setTables(1)">
+        <script src="js/ThemeChanger.js"></script>
+        <script src="js/ShowTables.js"></script>
+        <div style="display:none">
+            <iframe id="autoplay" width="560" height="315" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <link class="theme" rel="stylesheet" href="css/defaultstyles.css">
+        
+        <div id="acceptCookies" class="content" style="width:100%; margin:0;">
+            <p style="float:left; font-size: 12pt;">Deze site gebruikt koekjes, u moet deze koekjes accepteren. Ja, dat moet. Klik nou maar gewoon op "Oké dan".</p>
+            <button class="button" onclick="setCookie('cookieAccept', 'accepted',356); removeCookieAccept('accepted');" style="float:right;">Oké dan</button>
+        </div>
+        <table class="themeselector">
+            <tr>
+                <td colspan="3">
+                    <p>Thema</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img onclick="setCookie('theme', 'Trello');changeTheme('Trello');" class="themeselectimage" src="images/AJonc96g.png"></td>
+                <td><img onclick="setCookie('theme', 'DC');changeTheme('DC');" class="themeselectimage" src="images/keuze.png"></td> 
+                <td><img onclick="setCookie('theme', 'MotuPatlu');changeTheme('MotuPatlu');" class="themeselectimage" src="images/Motu_Patlu_official_logo.png"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button class="transparentbutton" onclick="setCookie('theme');changeTheme();">Standaard</button>
+                </td>
+            </tr>
+        </table>
+        <h1 class="header">Kennis maakt macht</h1>
+        <div class="content">
+            <div class="feedbackcontainer">
+                <p id="score"></p>
+                <img class="feedbackimage" id="feedbackimageperfect">
+                <img class="feedbackimage" id="feedbackimagegood">
+                <img class="feedbackimage" id="feedbackimagebad">
+                <img class="feedbackimage" id="feedbackimagedisasterous">
+            </div>
+            <nav>
+                <div class="container">
+                    <div class="menucontainer">
+                        <a href="showtables.html"><button class="navbutton">Bekijk tafels</button></a>
+                        <a href="maketest.html"><button class="navbutton">Maak toets</button></a>
+                        <a href="printopdrachten.html"><button class="navbutton">Print opdrachten</button></a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <h1 id="BekijkTafels">Bekijk tafels</h1>
+            </div>
+            <div class="container">
+                <button class="button" onclick="setTables(1)">1</button>
+                <button class="button" onclick="setTables(2)">2</button>
+                <button class="button" onclick="setTables(3)">3</button>
+                <button class="button" onclick="setTables(4)">4</button>
+                <button class="button" onclick="setTables(5)">5</button>
+                <button class="button" onclick="setTables(6)">6</button>
+                <button class="button" onclick="setTables(7)">7</button>
+                <button class="button" onclick="setTables(8)">8</button>
+                <button class="button" onclick="setTables(9)">9</button>
+                <button class="button" onclick="setTables(10)">10</button>
+                <!--
+                <button class="button" onclick="ShowTable()">11</button>
+                <button class="button" onclick="ShowTable()">12</button>
+                <button class="button" onclick="ShowTable()">13</button>
+                -->
+            </div>
+            <div class="container">
+                <p class="output" id="output"></p>
+            </div>
+        </div>
+    </body>
+    <script type="application/javascript">
+        var themeCookie = getCookie('theme');
+        changeTheme(themeCookie);
+        var accept = getCookie('cookieAccept');
+        removeCookieAccept(accept);
+    </script>
+</html>

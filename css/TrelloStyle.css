@@ -1,0 +1,190 @@
+/**
+ * @author Jayant Schuil, Bryan Kho, Laurens Trotsenburg
+ */
+html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background-color: rgb(0, 121, 191);
+    background-image: url(../images/TrelloBackground2.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+.content {
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 5px;
+    width: 80%;
+    background-color: rgba(238, 238, 238, 0.8);
+    clear: both;
+    background-repeat: no-repeat;
+    background-size: 450px;
+    background-position: right;
+    overflow: hidden;
+}
+.navbutton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    float: left;
+    background-color: #d6dadc;
+    border: none;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+}
+.navbutton:hover {
+    background-color: #055A8C;
+    color: white;
+}
+.themeselector {
+    position: fixed;
+    float: right;
+    right: 0;
+    margin: 20px;
+}
+.themeselector tr p {
+    text-align: center;
+    color: #E4F0F6;
+}
+.themeselector tr td {
+    text-align: center;
+}
+.themeselectimage{
+    height: 50px;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .themeselector {
+    position: relative;
+    float: none;
+    margin: 0;
+    background-color: #094C72;
+    clear: both;
+    width: 100%;
+    }
+    .themeselector tr td {
+    width: calc(100% / 3);
+    }
+}
+.container {
+    margin: auto;
+    padding: 0;
+    min-height: 50px;
+    clear: both;
+}
+.feedbackcontainer {
+    clear: none;
+    float: right;
+    text-align: center;
+    width: 60%;
+}
+#score {
+    font-size: 15pt;
+}
+.feedbackimage {
+    width: 100px;
+    display: none;
+    margin: 0 auto;
+}
+.menucontainer {
+    float: left;
+    height: 100%;
+    Width: 100%;
+    background-color: #094C72;
+}
+h1 {
+    margin: 0px;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 35pt;
+    font-weight: normal;
+    color: #333333;
+    text-align: center;
+    clear: both;
+}
+.header{
+    position: relative;
+    top: 50px;
+    clear: none;
+    z-index: -1;
+}
+@media (max-width:800px) {
+  .header {
+    font-size: 30pt;
+    width: 80%;
+  }
+}
+@media (max-width:600px) {
+  .header {
+    top: 30px;
+    width: 100%;
+  }
+}
+p {
+    margin: 0px;
+    font-family: Helvetica Neue, sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    color: #333333;
+}
+#instructie {
+    text-align: center;
+    clear: both;
+}
+.output {
+    margin: 10px;
+}
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    background-color: #d6dadc;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica Neue, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    min-width: 55px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #055A8C;
+    color: white;
+}
+#checkanswersbutton{
+    width: 100%;
+}
+.answer{
+    width: 40px;
+    height: 18pt;
+}
+.equation{
+    border: none;
+    background-color: rgba(255,255,255,0.0);
+    font-family:Helvetica Neue, sans-serif;
+    font-size: 20pt;
+    color: #333333;
+    width: 150px;
+}
+.transparentbutton {
+    background-color: Transparent;
+    border: none;
+    color: #E4F0F6;
+    text-align: center;
+    font-family: Helvetica Neue, sans-serif;
+    cursor: pointer;
+}

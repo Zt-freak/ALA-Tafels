@@ -1,0 +1,184 @@
+/**
+ * @author Bryan Kho, Laurens Trotsenburg
+ */
+html {
+    margin: 0;
+    height: 100%;
+}
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #555555;
+}
+.content {
+    margin: auto;
+    margin-top: 12%;
+    width: 80%;
+    background-color: #222222;
+    clear: both;
+    overflow: hidden;
+}
+.navbutton {
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    float: left;
+    background-color: #EEEEEE;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    cursor: pointer;
+}
+.navbutton:hover {
+    background-color: #444444;
+    color: white;
+}
+.themeselector {
+    position: fixed;
+    float: right;
+    right: 0;
+    margin: 20px;
+}
+.themeselector tr p {
+    text-align: center;
+    color: #E4F0F6;
+}
+.themeselector tr td {
+    text-align: center;
+}
+.themeselectimage{
+    height: 50px;
+    cursor: pointer;
+}
+@media (max-width:600px) {
+    .themeselector {
+    position: relative;
+    float: none;
+    margin: 0;
+    background-color: #222222;
+    clear: both;
+    width: 100%;
+    }
+    .themeselector tr td {
+    width: calc(100% / 3);
+    }
+}
+.container {
+    margin: auto;
+    min-height: 50px;
+    clear:both;
+}
+.menucontainer {
+    float: left;
+    height: 100%;
+    Width: 100%;
+    background-color: #444444;
+}
+.feedbackcontainer {
+    clear: none;
+    float: right;
+    text-align: center;
+    width: 60%;
+}
+#score {
+    font-size: 15pt;
+}
+.feedbackimage {
+    width: 100px;
+    display: none;
+    margin: 0 auto;
+}
+h1 {
+    margin: 0px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 35pt;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    clear: both;
+}
+.header{
+    position: relative;
+    top: 50px;
+    clear: none;
+    z-index: -1;
+}
+@media (max-width:800px) {
+  .header {
+    font-size: 30pt;
+    width: 80%;
+  }
+}
+@media (max-width:600px) {
+  .header {
+    top: 30px;
+    width: 100%;
+  }
+}
+p {
+    margin: 0px;
+    font-family: Century Gothic, sans-serif;
+    font-size: 20pt;
+    font-weight: normal;
+    color: white;
+}
+#instructie {
+    text-align: center;
+    clear: both;
+}
+/*.s{
+    background-color: #555555;
+    color: white;
+}*/
+.output {
+    display: inline-block;
+}
+.button {
+    margin-left: auto;
+    margin-right: auto;
+    float: left;
+    background-color: #EEEEEE;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Century Gothic, sans-serif;
+    font-weight: bold;
+    height: 50px;
+    min-width: 55px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #444444;
+    color: white;
+}
+#checkanswersbutton{
+    margin-top: 8px;
+    width: 100%;
+}
+.answer{
+    width: 40px;
+    height: 18pt;
+}
+.equation{
+    border: none;
+    background-color: rgba(255,255,255,0.0);
+    font-family:Century Gothic, sans-serif;
+    font-size: 20pt;
+    color: white;
+    width: 150px;
+}
+.transparentbutton {
+    background-color: Transparent;
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Century Gothic, sans-serif;
+    cursor: pointer;
+}

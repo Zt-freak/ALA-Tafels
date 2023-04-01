@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <script src="js/ThemeChanger.js"></script>
+    <script scr="js/GenereerOpdrachten.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.debug.js"></script>
+    <link class="theme" rel="stylesheet" href="/css/defaultstyles.css">
+    <table class="themeselector">
+        <tr>
+            <td colspan="3">
+                <p>Thema</p>
+            </td>
+        </tr>
+        <tr>
+            <td><img onclick="setCookie('theme', 'Trello');changeTheme('Trello');" class="themeselectimage" src="images/AJonc96g.png"></td>
+            <td><img onclick="setCookie('theme', 'DC');changeTheme('DC');" class="themeselectimage" src="images/keuze.png"></td>
+            <td><img onclick="setCookie('theme', 'MotuPatlu');changeTheme('MotuPatlu');" class="themeselectimage" src="images/Motu_Patlu_official_logo.png"></td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button class="transparentbutton" onclick="setCookie('theme');changeTheme();">Standaard</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button class="transparentbutton" onclick="setCookie('theme');changeTheme('SatangJabang');;">Satang Jabang</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <button class="transparentbutton" onclick="setCookie('theme');changeTheme('None');;">None</button>
+            </td>
+        </tr>
+    </table>
+    <script type="application/javascript">
+        var themeCookie = getCookie('theme');
+        changeTheme(themeCookie);
+        var accept = getCookie('cookieAccept');
+        removeCookieAccept(accept);
+    }
+    </script>
+    <button onclick="setCookie('cookieAccept', 'accepted',356); removeCookieAccept('accepted');">Cookies zijn geaccepteerd</button>
+    <button onclick="deleteCookie('cookieAccept')">Cookies zijn niet geaccepteerd</button><br>
+    <a href="showtables.html"><button>Bekijk tafels</button></a>
+    <a href="maketest.html"><button>Maak toets</button></a>
+    <a href="printopdrachten.html"><button>Print opdrachten</button></a><br>
+    <button onclick="genereerOpdrachten(3)">Print opdrachten tafel 3</button>
+    
+</html>
